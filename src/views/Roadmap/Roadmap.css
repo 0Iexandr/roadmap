@@ -1,0 +1,92 @@
+.roadmap-container {
+  background-image: url(../../assets/mobile-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 42px;
+  height: 600px;
+  width: 375px;
+
+  @media screen and (min-width: 744px) {
+    height: 700px;
+    width: 744px;
+    background-image: url(../../assets/tablet-background.png);
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 800px;
+    width: 1440px;
+    background-image: url(../../assets/desktop-background.png);
+  }
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 95px;
+  font-family: 'Black Han Sans';
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1C303A;
+  z-index: 1;
+
+  @media screen and (min-width: 744px) {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+    line-height: 80px;
+    top: 120px;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'Yellowtail';
+  font-size: 80px;
+  line-height: 106.7%;
+  text-transform: capitalize;
+  color: #859A50;
+  opacity: 0.2;
+
+  @media screen and (min-width: 744px) {
+    font-size: 100px;
+    line-height: 106%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 140px;
+  }
+}
+
+.scroll-container {
+  display: flex;
+  width: 100%;
+  margin: 20px 56px 0 56px;
+  column-gap: 40px;
+
+  @media screen and (min-width: 744px) {
+    margin: 35px 70px 0 70px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 38px 70px 0 70px;
+  }
+}
+
+.scroll-horizontal {
+  height: 295px !important;
+
+  @media screen and (min-width: 744px) {
+    height: 330px !important;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 400px !important;
+  }
+}

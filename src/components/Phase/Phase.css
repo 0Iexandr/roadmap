@@ -1,0 +1,102 @@
+.phase-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.phase-container div {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.phase-border {
+  background-image: url(../../assets/bamboo-frame.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 259px;
+  width: 430px;
+  z-index: 1;
+
+  @media screen and (min-width: 744px) {
+    height: 295px;
+    width: 490px;
+    background-image: url(../../assets/bamboo-frame.png);
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 364px;
+    width: 605px;
+    background-image: url(../../assets/bamboo-frame.png);
+  }
+}
+
+.phase-background {
+  margin: 20px 0 0 34px;
+  width: 352px;
+  height: 213px;
+  padding-top: 38px;
+  background: #FFF1BB;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+
+  @media screen and (min-width: 744px) {
+    margin: 23px 0 0 41px;
+    height: 245px;
+    width: 407px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 38px 0 0 50px;
+    width: 500px;
+    height: 280px;
+  }
+}
+
+.phase-title {
+  text-align: center;
+  font-family: 'Nerko One';
+  font-size: 28px;
+  line-height: 34px;
+  color: #53865D;
+
+  @media screen and (min-width: 744px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.phase-list {
+  list-style: disc;
+  margin: 0 44px 0 79px;
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 19px;
+  color: #1C303A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  @media screen and (min-width: 744px) {
+    margin: 0 48px 0 83px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 0 55px 0 90px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.phase-list li {
+  margin-top: 6px;
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 8px;
+  }
+}
