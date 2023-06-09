@@ -67,15 +67,24 @@
 .scroll-container {
   display: flex;
   width: 100%;
-  margin: 20px 56px 0 56px;
+  column-gap: 40px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.wheel-container {
+  display: flex;
+  width: 100%;
+  margin: 20px 0 0 56px;
   column-gap: 40px;
 
   @media screen and (min-width: 744px) {
-    margin: 35px 70px 0 70px;
+    margin: 35px 0 0 70px;
   }
 
   @media screen and (min-width: 1440px) {
-    margin: 38px 70px 0 70px;
+    margin: 38px 0 0 70px;
   }
 }
 
